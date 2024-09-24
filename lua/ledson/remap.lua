@@ -52,3 +52,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 -- Make a file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = false })
+
+-- Formatter using prettier
+vim.keymap.set("n", "<leader>fp", ":Neoformat prettier<CR>")
+vim.keymap.set("n", "<leader>nf", ":Neoformat<CR>")
