@@ -42,4 +42,17 @@ return require('packer').startup(function(use)
   }
   use('sbdchd/neoformat')
   use('lukas-reineke/indent-blankline.nvim')
+  -- file manager
+  use('ms-jpq/chadtree')
+  -- emmet
+  use('mattn/emmet-vim')
+  -- autoclose tags
+  use('windwp/nvim-ts-autotag')
+  -- autopairs
+  use{
+    'windwp/nvim-autopairs',
+    config = function()
+      require('nvim-ts-autotag').setup()
+    end,
+  }
 end)
