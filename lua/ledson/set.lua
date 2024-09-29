@@ -61,3 +61,7 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 
 vim.o.winblend = 10
 vim.o.pumblend = 10
+
+-- disabling new comment lines after writing a comment.
+vim.cmd('autocmd BufEnter * set formatoptions-=cro')
+vim.cmd('autocmd BufEnter * setlocal formatoptions-=cro')

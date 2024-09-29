@@ -8,11 +8,26 @@ return require('packer').startup(function(use)
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- colorscheme rosepine
   use({
     'rose-pine/neovim',
     as = 'rose-pine',
+  })
+  -- colorscheme tokyo night
+  use({
+    "folke/tokyonight.nvim",
     config = function()
-      vim.cmd('colorscheme rose-pine')
+      require('tokyonight').setup({
+        style = "storm",
+        transparent = true,
+        terminal_colors = true,
+        styles = {
+          comments = { italic = false },
+          keywords = { italic = false },
+          sidebars = "light",
+          floats = "light",
+        }
+      })
     end
   })
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -54,5 +69,20 @@ return require('packer').startup(function(use)
     config = function()
       require('nvim-ts-autotag').setup()
     end,
+  }
+  -- discord reach presence
+  use{
+    'andweeb/presence.nvim',
+  }
+  -- Bufferline 
+  use{
+    'akinsho/bufferline.nvim',
+    tag = "*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
+  -- lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 end)

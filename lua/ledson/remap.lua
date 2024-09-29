@@ -1,6 +1,12 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- Changing between buffers
+vim.keymap.set("n", "<C-h>", "<C-w>h", {silent = false})
+vim.keymap.set("n", "<C-l>", "<C-w>l", {silent = false})
+vim.keymap.set("n", "<C-j>", "<C-w>j", {silent = false})
+vim.keymap.set("n", "<C-k>", "<C-w>k", {silent = false})
+
 vim.keymap.set("n", "<leader>pv", ":Ex<CR>")
 vim.keymap.set("n", "<leader>u", ":UndotreeShow<CR>")
 
@@ -44,8 +50,8 @@ vim.keymap.set("n", "<leader>if", function()
   vim.lsp.buf.hover()
 end)
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<C-x>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<C-z>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
@@ -65,3 +71,15 @@ vim.keymap.set("n", "<leader>so", ":so<CR>")
 
 -- Chadtree
 vim.keymap.set("n", "<leader>co", ":CHADopen<CR>")
+
+-- Resizing buffers
+vim.keymap.set("n", "<leader>v>", ":vertical res -10<CR>")
+vim.keymap.set("n", "<leader>v<", ":vertical res +10<CR>")
+vim.keymap.set("n", "<leader>h<", ":horizontal res -10<CR>")
+vim.keymap.set("n", "<leader>h>", ":horizontal res +10<CR>")
+
+-- bufferline config
+vim.keymap.set("n", "<C-b>", ":BufferLineCloseLeft<CR>")
+vim.keymap.set("n", "<C-m>", ":BufferLineCloseRight<CR>")
+vim.keymap.set("n", "<leader>bc", ":BufferLinePickClose<CR>")
+vim.keymap.set("n", "<leade>bs", ":BufferLinePick<CR>")

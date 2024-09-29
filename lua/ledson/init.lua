@@ -1,4 +1,5 @@
 require("ledson.remap")
 require("ledson.set")
 require("ledson.rosepine")
+vim.cmd("colorscheme rose-pine")
 --require("ledson.indent")
