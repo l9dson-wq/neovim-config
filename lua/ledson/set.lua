@@ -1,5 +1,5 @@
 -- This line allow us to set the cursor, for eg always in insert mode theme 
---vim.opt.guicursor = ""
+vim.opt.guicursor = ""
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
