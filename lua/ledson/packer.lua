@@ -19,17 +19,21 @@ return require('packer').startup(function(use)
     config = function()
       require('tokyonight').setup({
         style = "storm",
-        transparent = true,
+        transparent = false,
         terminal_colors = true,
         styles = {
           comments = { italic = false },
           keywords = { italic = false },
-          sidebars = "light",
-          floats = "light",
+          sidebars = "dark",
+          floats = "dark",
         }
       })
     end
   })
+  -- colorscheme solarized-osaka
+  use{
+    'craftzdog/solarized-osaka.nvim'
+  }
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
@@ -85,4 +89,5 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  use {'vague2k/vague.nvim'}
 end)

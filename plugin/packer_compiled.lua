@@ -210,13 +210,18 @@ _G.packer_plugins = {
     path = "/home/ledson/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["solarized-osaka.nvim"] = {
+    loaded = true,
+    path = "/home/ledson/.local/share/nvim/site/pack/packer/start/solarized-osaka.nvim",
+    url = "https://github.com/craftzdog/solarized-osaka.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/ledson/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
-    config = { "\27LJ\2\në\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\vstyles\rkeywords\1\0\1\vitalic\1\rcomments\1\0\4\rsidebars\nlight\rcomments\0\vfloats\nlight\rkeywords\0\1\0\1\vitalic\1\1\0\4\16transparent\2\vstyles\0\20terminal_colors\2\nstyle\nstorm\nsetup\15tokyonight\frequire\0" },
+    config = { "\27LJ\2\né\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\vstyles\rkeywords\1\0\1\vitalic\1\rcomments\1\0\4\rcomments\0\rsidebars\tdark\rkeywords\0\vfloats\tdark\1\0\1\vitalic\1\1\0\4\vstyles\0\16transparent\1\20terminal_colors\2\nstyle\nstorm\nsetup\15tokyonight\frequire\0" },
     loaded = true,
     path = "/home/ledson/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
@@ -226,6 +231,11 @@ _G.packer_plugins = {
     path = "/home/ledson/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vague.nvim"] = {
+    loaded = true,
+    path = "/home/ledson/.local/share/nvim/site/pack/packer/start/vague.nvim",
+    url = "https://github.com/vague2k/vague.nvim"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/ledson/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -234,14 +244,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: tokyonight.nvim
-time([[Config for tokyonight.nvim]], true)
-try_loadstring("\27LJ\2\në\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\vstyles\rkeywords\1\0\1\vitalic\1\rcomments\1\0\4\rsidebars\nlight\rcomments\0\vfloats\nlight\rkeywords\0\1\0\1\vitalic\1\1\0\4\16transparent\2\vstyles\0\20terminal_colors\2\nstyle\nstorm\nsetup\15tokyonight\frequire\0", "config", "tokyonight.nvim")
-time([[Config for tokyonight.nvim]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20nvim-ts-autotag\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
+-- Config for: tokyonight.nvim
+time([[Config for tokyonight.nvim]], true)
+try_loadstring("\27LJ\2\né\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\vstyles\rkeywords\1\0\1\vitalic\1\rcomments\1\0\4\rcomments\0\rsidebars\tdark\rkeywords\0\vfloats\tdark\1\0\1\vitalic\1\1\0\4\vstyles\0\16transparent\1\20terminal_colors\2\nstyle\nstorm\nsetup\15tokyonight\frequire\0", "config", "tokyonight.nvim")
+time([[Config for tokyonight.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

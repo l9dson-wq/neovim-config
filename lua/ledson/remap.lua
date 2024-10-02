@@ -79,7 +79,7 @@ vim.keymap.set("n", "<leader>h<", ":horizontal res -10<CR>")
 vim.keymap.set("n", "<leader>h>", ":horizontal res +10<CR>")
 
 -- bufferline config
-vim.keymap.set("n", "<C-b>", ":BufferLineCloseLeft<CR>")
-vim.keymap.set("n", "<C-m>", ":BufferLineCloseRight<CR>")
+vim.keymap.set("n", "<leader>br", ":BufferLineCloseLeft<CR>")
+vim.keymap.set("n", "<leader>bl", ":BufferLineCloseRight<CR>")
 vim.keymap.set("n", "<leader>bc", ":BufferLinePickClose<CR>")
 vim.keymap.set("n", "<leade>bs", ":BufferLinePick<CR>")
