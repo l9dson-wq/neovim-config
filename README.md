@@ -4,7 +4,7 @@ Just to work out of the box :)
 1. -> CPM
 2. -> LSP servers
 3. -> Custom keys
-4. -> ThePrimeagen config and plugins
+4. -> Harpoon
 5. -> Packer
 6. -> Mason
 7. -> Telescope
