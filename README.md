@@ -11,7 +11,7 @@ Just to work out of the box :)
 8. -> Fugitive
 9. -> undotree
 10. -> Prettier
-11. -> indent guide lines
+11. -> indent guide lines (I am not currently using this plugin, but is useful).
 
 Telescope
 ![image](https://github.com/user-attachments/assets/f65a1557-a8c9-4342-b1aa-5b802f9944c3)
